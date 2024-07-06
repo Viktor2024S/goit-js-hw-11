@@ -15,6 +15,7 @@
 }
 
 /* styles.css */
+/* styles.css */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -85,4 +86,45 @@ button {
   width: 100%;
   height: auto;
   display: block;
+}
+/*  */
+/*  */
+/* src/css/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#loader {
+  display: none;
+  text-align: center;
+}
+
+#loader.hidden {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gallery-item {
+  width: calc(33.333% - 10px);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.hidden {
+  display: none;
 }
