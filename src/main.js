@@ -34,6 +34,7 @@ async function handleSearch(event) {
       renderGallery(images, gallery);
     }
   } catch (error) {
+    console.log(error);
     iziToast.error({
       title: 'Error',
       message: 'Something went wrong. Please try again later.',
