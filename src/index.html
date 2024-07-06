@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="./page-2.html" class="nav-link">Page 2</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="./page-3.html" class="nav-link">Page 3</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div>
+      <form id="search-form">
+        <input
+          type="text"
+          name="query"
+          placeholder="Search for images..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div id="loader" class="hidden">Loading...</div>
+    <div id="gallery" class="gallery"></div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
