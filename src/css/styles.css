@@ -104,6 +104,8 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  /* Тимчасово display: block; щоб побачити лоудер. Лудер - видимий */
+  /* display: block;  */
 }
 
 @keyframes spin {
