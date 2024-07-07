@@ -19,14 +19,7 @@ async function handleSearch(event) {
     return;
   }
 
-  console.log('Showing loader'); //превірка лоадера
   loader.classList.remove('hidden');
-  // ==== ще одна перевірка лоадера
-  console.log(
-    'Loader is now:',
-    loader.classList.contains('hidden') ? 'hidden - remove' : 'visible - remove'
-  );
-  // ======
   gallery.innerHTML = '';
 
   try {
@@ -47,15 +40,7 @@ async function handleSearch(event) {
       message: 'Something went wrong. Please try again later.',
     });
   } finally {
-    console.log('Hiding loader'); //превірка лоадера
     loader.classList.add('hidden');
-    // ==== ще одна перевірка лоадера
-    console.log(
-      'Loader is now:',
-      loader.classList.contains('hidden') ? 'hidden' : 'visible'
-    );
-    // ======
-    loader.style.display = 'none'; //превірка лоадера. джаст ін кейс егейн
   }
 }
 

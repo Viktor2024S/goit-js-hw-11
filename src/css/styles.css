@@ -22,8 +22,7 @@ body {
   background-color: #f5f5f5;
 }
 
-form,
-#loader {
+form {
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -103,11 +102,11 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
-  /* Тимчасово display: block; щоб побачити лоудер. Лудер - видимий */
-  /* display: block;  */
+  display: flex;
 }
-
+div#loader.hidden {
+  display: none;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
